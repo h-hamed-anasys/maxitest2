@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { User } from './user.model';
 import { DUMMY_USERS } from '../dummy-users';
 import { CardComponent } from "../shared/card/card.component";
 
@@ -12,7 +13,7 @@ import { CardComponent } from "../shared/card/card.component";
 export class UserComponent {
   // @Input() avatar!: string;
   // @Input() name!: string;
-  @Input() user!: { avatar: string; name: string; id: string };
+  @Input() user!: User;
   @Output() selectedUser = new EventEmitter<string>();
   @Input() selected!: boolean;
 

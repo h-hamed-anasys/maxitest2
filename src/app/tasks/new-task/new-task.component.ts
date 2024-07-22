@@ -20,6 +20,7 @@ export class NewTaskComponent {
   private taskService = inject(TasksService);
   onCancel() {
     this.close.emit();
+    console.log('Task added');
   }
   onSubmit() {
     this.taskService.addTask(

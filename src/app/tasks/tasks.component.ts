@@ -26,9 +26,6 @@ export class TasksComponent {
   }
   onCloseAddTask() {
     this.isAddingTask = false;
-  }
-  onAddTask(taskData: NewTaskData) {
-    
-    this.isAddingTask = false;
+    console.log('Task added');  // Replace with actual task creation logic.
   }
 }
